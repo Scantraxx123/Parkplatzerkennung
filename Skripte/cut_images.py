@@ -2,6 +2,8 @@ import os
 import shutil
 from PIL import Image
 from xml.dom import minidom
+import numpy as np
+
 
 class xmlAuslesen:
     frei = 0
@@ -9,8 +11,9 @@ class xmlAuslesen:
     insgesamt = 0
     undefiniert = 0
     i = 0
-    testx = []
-    testy = []    
+    coordinates_x = []
+    coordinates_y = [] 
+    labels = []
     xml_picture_path = "C:\\Users\\Arbeitslaptop\\Desktop\\Teamprojekt\\2012-09-16"
     cut_picture_path = "C:\\Users\\Arbeitslaptop\\Desktop\\Teamprojekt\\Parkplaetze_"
     
@@ -33,14 +36,14 @@ class xmlAuslesen:
             items = mydoc.getElementsByTagName('point')
                         
             for elem in items:  
-                testx.append(int(elem.attributes['x'].value))
-                testy.append(int(elem.attributes['y'].value))
-                if(len(testx) == 4):      
-                    cropbox = (min(testx),min(testy),max(testx),max(testy))
+                coordinates_x.append(int(elem.attributes['x'].value))
+                coordinates_y.append(int(elem.attributes['y'].value))
+                if(len(coordinates_x) == 4):      
+                    cropbox = (min(coordinates_x),min(coordinates_y),max(coordinates_x),max(coordinates_y))
                     print(cropbox)
                     zuschnitt = im.crop(cropbox)
-                    testx = []
-                    testy = []
+                    coordinates_x = []
+                    coordinates_y = []
                     try:
                         zuschnitt.save(new_path + "\\Parkplatz_" + str(i)+".jpg")
                     except SystemError:
@@ -50,7 +53,6 @@ class xmlAuslesen:
 
 
     for filename in os.listdir(xml_picture_path):
-        i = 0
         if not filename.endswith('.xml'): continue
         filepath = os.path.join(xml_picture_path, filename)
         document = minidom.parse(filepath)
@@ -65,8 +67,10 @@ class xmlAuslesen:
                 insgesamt += 1
                 if occupied == 1:
                     besetzt += 1
+                    labels.append(1)
                 elif occupied == 0:
                     frei += 1
+                    labels.append(0)
                 else:
                     undefiniert += 1
             except KeyError:
@@ -79,7 +83,7 @@ class xmlAuslesen:
         f.write("frei: " + str(frei) + "; ")
         f.write("undefiniert: " + str(undefiniert))
         f.close()
-        i += 1
+        np.save(os.path.join(xml_picture_path,'labels.npy'), labels)
         frei = 0
         besetzt = 0
         insgesamt = 0
