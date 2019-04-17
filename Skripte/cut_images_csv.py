@@ -8,14 +8,11 @@ import csv
 # Pfade anpassen!
 
 class csvAuslesen:
-    frei = 0
-    besetzt = 0
-    insgesamt = 0
-    undefiniert = 0
     i = 0
-    coordinates_x = []
-    coordinates_y = [] 
-    labels = []
+    org_img_width = 2592
+    org_img_height = 1944
+    new_img_width = 1000
+    new_img_height = 750
     csv_picture_path = "C:\\Users\\Arbeitslaptop\\Desktop\\CSV_Teamprojekt\\2015-11-16"
     cut_picture_path = "C:\\Users\\Arbeitslaptop\\Desktop\\CSV_Teamprojekt\\Parkplatz_"
     
@@ -38,10 +35,10 @@ class csvAuslesen:
                 y = int(row[2])
                 w = int(row[3])
                 h = int(row[4])
-                newX = (x/2592)*1000
-                newY = (y/1944)*750
-                newW = (w/2592)*1000
-                newH = (h/1944)*750
+                newX = (x/org_img_width)*new_img_width
+                newY = (y/org_img_height)*new_img_height
+                newW = (w/org_img_width)*new_img_width
+                newH = (h/org_img_height)*new_img_height
                 cropbox = (newX,newY,newX+newW,newY+newH)
                 print(cropbox)
                 zuschnitt = im.crop(cropbox)
