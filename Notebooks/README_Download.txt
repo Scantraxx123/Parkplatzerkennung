@@ -25,6 +25,9 @@ PUC 50/50 Teilung Test and Train Daten
 !wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145665&authkey=ABl6jWr8MsetVxc"
 
 
+CNR Test Fotos
+!wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145681&authkey=AIicdVtkBEkQgvU"
+
 2)
 Danach suchen:
 
