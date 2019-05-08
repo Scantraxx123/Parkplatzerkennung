@@ -3,6 +3,10 @@ Es wurden verschiedene Pakete angelegt mit den Fotos. Damit ihre diese runterlad
 1)
 Zuerst downloaden:
 
+
+PUC_UFPR05_04_50_50
+!wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145714&authkey=ACWhFouJ6_327I8" 
+
 PUC
 !wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145579&authkey=AELq2HUNUkVCyRo"
 
@@ -40,7 +44,7 @@ Das "download" kann unterschiedlich sein. Nach dem herunterladen steht der Name 
 3)
 Danach entpacken:
 
-!unzip -q "download?cid=11F71A1654195330&resid=11F71A1654195330!45578&authkey=AOMxFW3aoIpZHqg.2"
+!unzip -q ""
 
 
 In den Anführungsstrichen steht der Name des Downloads.
