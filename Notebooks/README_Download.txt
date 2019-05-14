@@ -3,6 +3,11 @@ Es wurden verschiedene Pakete angelegt mit den Fotos. Damit ihre diese runterlad
 1)
 Zuerst downloaden:
 
+ALL_50K
+!wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145779&authkey=AHYqi-q2jYSmI5k"
+
+ALL_100K
+!wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145780&authkey=ANeaNl9T3AjkTr4" 
 
 PUC_UFPR05_04_50_50
 !wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145714&authkey=ACWhFouJ6_327I8" 
