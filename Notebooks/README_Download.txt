@@ -3,6 +3,15 @@ Es wurden verschiedene Pakete angelegt mit den Fotos. Damit ihre diese runterlad
 1)
 Zuerst downloaden:
 
+PUC_50k
+!wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145907&authkey=AEafDmEGTS9nfOU"
+
+UFPR04_50k
+!wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145908&authkey=AMEuMZE3Yjm51sA"
+
+UFPR05_50k
+!wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145909&authkey=AElKE_IA62qa2BQ"
+
 50k_ALl_Parking_Spaces
 !wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145897&authkey=AAQKZ0FhjjfkhcM"
 

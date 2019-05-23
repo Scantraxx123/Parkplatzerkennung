@@ -3,7 +3,7 @@ import shutil
 import sys
 
 filename_txt = 'C:\\Users\\Arbeitslaptop\\Desktop\\Fotos\\CNR\\CNR-EXT-PATCHES-150x150\\PATCHES\\all.txt'
-copy_path = "C:\\Users\\Arbeitslaptop\\Desktop\\50k_All_Parking_Spaces\\test"
+copy_path = "C:\\Users\\Arbeitslaptop\\Desktop\\UFPR04_50k\\test"
 
 counter = 0
 empty = os.path.join(copy_path,"Empty")
@@ -12,7 +12,7 @@ filename_dir = os.path.dirname(filename_txt)
 with open(filename_txt) as f:
     for x in f:
         counter += 1
-        if counter == 10000:
+        if counter == 10001:
             sys.exit()            
         split = x.rstrip().split(" ")
         copy_file = os.path.join(filename_dir,split[0])
