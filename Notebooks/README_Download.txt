@@ -3,9 +3,11 @@ Es wurden verschiedene Pakete angelegt mit den Fotos. Damit ihre diese runterlad
 1)
 Zuerst downloaden:
 
-ALL_ALL CNR Validation, Rest train
-!wget --no-check-certificate "https://onedrive.live.com/embed?cid=11F71A1654195330&resid=11F71A1654195330%2145892&authkey=AK7-2Ka2SZPQOzQ"
+50k_ALl_Parking_Spaces
+!wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145897&authkey=AAQKZ0FhjjfkhcM"
 
+ALL_ALL CNR Validation, Rest train
+!wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145892&authkey=AK7-2Ka2SZPQOzQ"
 
 ALL_50K
 !wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145779&authkey=AHYqi-q2jYSmI5k"
