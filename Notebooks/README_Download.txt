@@ -3,6 +3,9 @@ Es wurden verschiedene Pakete angelegt mit den Fotos. Damit ihre diese runterlad
 1)
 Zuerst downloaden:
 
+UFPR04_05_val_test_train
+!wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145939&authkey=AE2mvzAS3IHwVOs"
+
 PUC_50k
 !wget --no-check-certificate "https://onedrive.live.com/download?cid=11F71A1654195330&resid=11F71A1654195330%2145907&authkey=AEafDmEGTS9nfOU"
 
